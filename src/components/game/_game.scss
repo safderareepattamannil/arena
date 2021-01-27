@@ -1,0 +1,19 @@
+.game{
+    width: 100%;
+    max-width: 1400px;
+    background-color: blue;
+    background: url('../../assets/ingame/bgingame.png') no-repeat;
+    -webkit-backgound-size: cover;
+    height: 100vh;
+
+    &__nav{ // in-game navigation
+        color:blue;
+    }
+
+    &__battle-container{
+        
+    }
+
+   
+}
+

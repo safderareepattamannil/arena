@@ -1,9 +1,10 @@
 import './App.scss';
+import Game from './components/game/Game';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello wlrd</h1>
+      <Game/>
     </div>
   );
 }
