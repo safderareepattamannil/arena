@@ -1,13 +1,45 @@
 .player {
+    progress{
+        height: 20px;
+        border-radius: 0;
+        width: 75px;
+        background-color: red;
+        color:white;
+        font-size: 40px;
+    }
+
+    .hpValue{
+        position: absolute;
+        text-align: center;
+        color: white;
+        padding-top: 2px;
+    }
 
     &__char{
         display: flex;
-        font-size: 20px;
-    
+        flex-direction: row;
         &-skills-container{
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            border:3px solid black;
+            padding: .625rem .625rem;
+            width: 400px;
 
         }
+
+        &-wrapper{
+            padding: 5px 5px;
+        }
     }
+}
+
+/** Utility **/
+.selectable:hover{
+    opacity: .6;
+}
+
+.selected{
+    opacity: .4;
 }
