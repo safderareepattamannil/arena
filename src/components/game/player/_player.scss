@@ -1,45 +1,72 @@
 .player {
-    progress{
-        height: 20px;
-        border-radius: 0;
-        width: 75px;
-        background-color: red;
-        color:white;
-        font-size: 40px;
-    }
 
-    .hpValue{
-        position: absolute;
-        text-align: center;
-        color: white;
-        padding-top: 2px;
-    }
 
-    &__char{
+    &__char {
         display: flex;
         flex-direction: row;
-        &-skills-container{
+        padding-top: 30px;
+
+        &-skills-container {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
-            border:3px solid black;
-            padding: .625rem .625rem;
-            width: 400px;
+            border-top: 5px;
+            border-bottom: 5px;
+            border-color: $red;
+            border-style: solid;
+            width: 500px;
+            background-color: $beige;
 
+            img {
+                border: 1px solid black;
+            }
         }
 
-        &-wrapper{
+        &-wrapper {
             padding: 5px 5px;
+            position: relative;
+            left: 25px;
+            bottom: 10px;
+        }
+
+        &-health {
+            .hpValue {
+                position: absolute;
+                text-align: center;
+                color: black;
+                padding-top: 2.5px;
+                font-size:.95rem;
+                padding-left: 10px;
+            }
+            progress {
+                border: 1px solid black;
+                height: 20px;
+                border-radius: 0;
+                width: 77px;
+                background-color: red;
+                font-size: 40px;
+            }
         }
     }
 }
 
-/** Utility **/
-.selectable:hover{
-    opacity: .6;
+.selectedSkill {
+    height: 75px;
+    width: 75px;
+    background-color: gray;
+    border: 1px solid black;
 }
 
-.selected{
-    opacity: .4;
+.bordered img {
+    border: 1px solid black;
+}
+
+/** Utility **/
+.selectable:hover {
+    opacity: 0.8;
+}
+
+.selected {
+    opacity: 0.4;
 }

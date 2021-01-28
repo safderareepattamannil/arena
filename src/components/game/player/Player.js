@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Character from "./character/Character";
+import Character from "../character/Character";
 
 export default function Player() {
     const [ready, setReady] = useState(false);
     const [team, setTeam] = useState([]);
-    const [selected, setSelected] = useState();
     let path = "http://localhost:8888";
 
     let loadTeam = () => {
@@ -40,9 +39,7 @@ export default function Player() {
                     id={0}
                     path={path}
                     team={team}
-                    selected={selectedItem}
-                    currSelection={selected}
-                />
+                                  />
             )}
             <Character path={path} team={team}/>
             <Character path={path} team={team}/>
