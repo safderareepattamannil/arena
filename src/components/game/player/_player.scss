@@ -2,7 +2,9 @@
     &__char {
         display: flex;
         flex-direction: row;
-        padding-top: 30px;
+        padding-top: 50px;
+
+     
 
         &-skills-container {
             display: flex;
@@ -29,6 +31,7 @@
         }
 
         &-health {
+            padding-top: 5px;
             .hpValue {
                 position: absolute;
                 text-align: center;
@@ -39,7 +42,7 @@
 
             progress {
                 border: 1px solid black;
-                width: 77px;
+                width: 78px;
                 height: 20px;
             }
 
@@ -66,6 +69,7 @@
     }
 }
 
+
 .selectedSkill {
     height: 75px;
     width: 75px;
@@ -79,7 +83,7 @@
 
 /** Utility **/
 .selectable:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .selected {

@@ -1,0 +1,54 @@
+.navBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 200px 0 200px;
+
+    .player {
+        height: 90px;
+        width: 90px;
+        background-color: black;
+    }
+
+    .enemy {
+        height: 90px;
+        width: 90px;
+        background-color: black;
+    }
+
+    .middleModal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color:black;
+        }
+        progress {
+            border: 1px solid black;
+            width: 200px;
+            height: 12px;
+        }
+
+        progress {
+            color: white;
+        }
+
+        progress::-webkit-progress-value {
+            background: white;
+        }
+
+        progress::-moz-progress-bar {
+            background: lightcolor;
+        }
+
+        progress::-webkit-progress-value {
+            background: $red;
+        }
+
+        progress::-webkit-progress-bar {
+            background: white;
+        }
+    }
+}
