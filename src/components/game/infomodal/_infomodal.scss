@@ -1,0 +1,47 @@
+.infoWrapper{
+    background-color: beige;
+    width: 700px;
+    height: 150px;
+    float:right;
+    display:flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    border-top: 10px solid $red;
+    border-bottom: 10px solid $red;
+    border-left: 2px solid $red;
+
+    .skillimage img{
+        border: 1px solid black;
+        height: 90px;
+    }
+
+    .skillDescription{
+        align-self: start;
+        padding-left: 15px;
+        padding-top: 15px;
+        width: 100%;
+        .toprow{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;    
+            
+            .skillname{
+                color:$red;
+                font-size: 1.20rem;
+            }
+
+            .energy{
+                font-size: 12px;
+            }
+        }
+        .bottomrow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 35px;
+            font-size: 10px;
+        }
+    }
+
+}
