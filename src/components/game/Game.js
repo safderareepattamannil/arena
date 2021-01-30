@@ -15,13 +15,16 @@ export default function Game() {
     const [enemy, setEnemyTeam] = useState();
     let path = "http://localhost:8888";
 
+
+    const [selected, setSelected] = useState(null);
+
     let loadTeam = async () => {
         const urls = teamId.map((id) => path + "/char/" + id);
         try {
             let res = await Promise.all(urls.map((e) => fetch(e)));
             let resJson = await Promise.all(res.map((e) => e.json()));
             setTeam([...resJson]);
-            setPlayerReady(true);
+           setPlayerReady(true);
         } catch (err) {
             console.log(err);
         }
@@ -44,7 +47,7 @@ export default function Game() {
         loadTeam();
         loadEnemyTeam();
     }, []);
-
+ 
     return (
         <div className="game">
             <div className="game__nav">
@@ -52,7 +55,7 @@ export default function Game() {
             </div>
             <div className="game__battle-container">
                 <div className="battle-container__player">
-                    <Player path={path} team={team} ready={playerReady} />
+                    <Player path={path} team={team} ready={playerReady} updateSelected={setSelected}/>
                 </div>
                 <div className="battle-container__opponent">
                     {(
@@ -62,7 +65,7 @@ export default function Game() {
             </div>
 
             <div className="infoModal">
-                <InfoModal />
+                {playerReady && selected && <InfoModal selectedStateMoves={selected[1]} selectedStateId={selected[0]} path={path}/>}
             </div>
         </div>
     );

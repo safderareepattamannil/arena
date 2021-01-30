@@ -1,21 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function Character({ id, path, team }) {
-    const [selected, setSelected] = useState();
+export default function Character({ id, path, team, updateSelected }) {
     // TODO: FIGURE OUT HOW TO HANDLE SELECT
-    let selectedItem = (e) => {
-        console.log(e.currentTarget.id);
-        setSelected(e.currentTarget.id);
-        console.log(selected);
-    };
-
     return (
         <div className="player__char">
             <div className="player__char-wrapper">
                 <div
                     id={`${id}-avatar`}
                     className={`player__char-image bordered`}
-                >
+                >                   
                     <img
                         src={`${path}/${team[id][0].id}/avatar.jpg`}
                         alt="avatar"
@@ -31,40 +24,38 @@ export default function Character({ id, path, team }) {
                 <div
                     id={`${id}-skill-1`}
                     className="skill selectable"
-                    onClick={() => {
-                        console.log(team[id][0].skill[0]);
-                    }}
+                    onClick={() => updateSelected([team[id][0].id, team[id][0].skill[0]])}
                 >
                     <img
-                        src={`${path}/${team[id][0].id}/skill1/avatar.jpg`}
+                        src={`${path}/${team[id][0].id}/skill1/skill1.jpg`}
                         alt="skill 1"
                     />
                 </div>
-                <div className="skill selectable"
-                onClick={() => {
-                    console.log(team[id][0].skill[1]);
-                }}>
+                <div
+                    className="skill selectable"
+                    onClick={() => updateSelected([team[id][0].id, team[id][0].skill[1]])}
+                >
                     <img
-                        src={`${path}/${team[id][0].id}/skill2/avatar.jpg`}
-                        alt="skill 1"
+                        src={`${path}/${team[id][0].id}/skill2/skill2.jpg`}
+                        alt="skill 2"
                     />
                 </div>
-                <div className="skill selectable"
-                onClick={() => {
-                    console.log(team[id][0].skill[2]);
-                }}>
+                <div
+                    className="skill selectable"
+                    onClick={() => updateSelected([team[id][0].id, team[id][0].skill[2]])}
+                >
                     <img
-                        src={`${path}/${team[id][0].id}/skill3/avatar.jpg`}
-                        alt="skill 1"
+                        src={`${path}/${team[id][0].id}/skill3/skill3.jpg`}
+                        alt="skill 3"
                     />
                 </div>
-                <div className="skill selectable"
-                onClick={() => {
-                    console.log(team[id][0].skill[3]);
-                }}>
+                <div
+                    className="skill selectable"
+                    onClick={() => updateSelected([team[id][0].id, team[id][0].skill[3]])}
+                >
                     <img
-                        src={`${path}/${team[id][0].id}/skill4/avatar.jpg`}
-                        alt="skill 1"
+                        src={`${path}/${team[id][0].id}/skill4/skill4.jpg`}
+                        alt="skill 4"
                     />
                 </div>
             </div>

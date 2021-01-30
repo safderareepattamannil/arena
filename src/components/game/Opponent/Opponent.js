@@ -26,7 +26,7 @@ export default function Opponent({path, enemy}) {
                     className={`player__char-image bordered`}
                 >
 
-                <img className={"flipped"} src={`${path}/${enemy[1][0].id}/avatar.jpg`} alt="enemy one"/>
+                <img className={"flipped"} src={`${path}/${enemy[1][0].id}/avatar.jpg`} alt="enemy two"/>
                    
                 </div>
                 <div className="player__char-health">
@@ -41,7 +41,7 @@ export default function Opponent({path, enemy}) {
                     className={`player__char-image bordered`}
                 >
 
-                <img  className={"flipped"} src={`${path}/${enemy[2][0].id}/avatar.jpg`}alt="enemy one"/>
+                <img  className={"flipped"} src={`${path}/${enemy[2][0].id}/avatar.jpg`}alt="enemy three"/>
                    
                 </div>
                 <div className="player__char-health">

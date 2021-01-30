@@ -51,4 +51,17 @@
             background: white;
         }
     }
+
+    .chakraModal{
+        display:flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        color: black;
+        font-weight: 600;
+    }
+    .chakraModal img{
+        height: 60%;
+        padding-right: 10px;
+    }
 }
+

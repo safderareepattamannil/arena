@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Chakra from './Chakra'
 
 export default function Nav() {
     return (
@@ -14,7 +15,7 @@ export default function Nav() {
                     <progress id="time" value="100" max="100"></progress>
                 </div>
                 <div className="currentEnergy">
-                    chakra
+                    <Chakra/>
                 </div>
             </div>
             <div className="enemy">

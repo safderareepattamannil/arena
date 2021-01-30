@@ -6,6 +6,7 @@ const app = express();
 const port = 8888;
 app.use(cors());
 app.use(express.static('assets/characters'))
+app.use(express.static('assets/chakra'))
 
 app.get("/", (req, res) => {
     res.send("Server running");

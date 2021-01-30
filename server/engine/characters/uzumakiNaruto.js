@@ -8,6 +8,7 @@ let info = {
 
 let skills = {
     skill1: {
+        id:1,
         name: "Uzumaki Naruto Combo",
         type: "attack",
         val: 20,
@@ -27,6 +28,7 @@ let skills = {
         },
     },
     skill2: {
+        id:2,
         name: "Rasengan",
         type: "attack",
         val: 45,
@@ -48,6 +50,7 @@ let skills = {
         // figure out how to implements stuns
     },
     skill3: {
+        id:3,
         name: "Shadow Clones",
         type: "attack",
         harmful: false,
@@ -63,6 +66,7 @@ let skills = {
         // TODO: implement self targeting
     },
     skill4:{
+        id:4,
         name: "Sexy Jutsu",
         type: "invulnerable",
         val: 0,
