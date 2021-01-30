@@ -8,7 +8,6 @@ export default function Character({ id, path, team }) {
         setSelected(e.currentTarget.id);
         console.log(selected);
     };
-    console.log(team[0][0].id);
 
     return (
         <div className="player__char">

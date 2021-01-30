@@ -89,3 +89,13 @@
 .selected {
     opacity: 0.4;
 }
+
+.enemy-container{
+    display:flex;
+    flex-direction: column;
+
+    .enemy-wrapper{
+        padding-bottom: 55px;
+        margin-left: 100px;
+    }
+}

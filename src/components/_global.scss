@@ -17,6 +17,11 @@ body{
 
 }
 
+// Utilities
+.flipped{
+    transform: scaleX(-1);
+}
+
 // Colors
 $beige: #f4e9c9;
 $red: #b92611;
