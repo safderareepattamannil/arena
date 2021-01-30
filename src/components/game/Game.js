@@ -62,11 +62,12 @@ export default function Game() {
                        enemyReady && <Opponent path={path} enemy={enemy}/>
                     )}
                 </div>
-            </div>
-
-            <div className="infoModal">
+                <div className="battle-container__infoModal">
                 {playerReady && selected && <InfoModal selectedStateMoves={selected[1]} selectedStateId={selected[0]} path={path}/>}
             </div>
+            </div>
+
+
         </div>
     );
 }

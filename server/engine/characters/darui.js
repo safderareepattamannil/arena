@@ -57,7 +57,7 @@ let skills = {
         classes: ["instant", "energy"],
         target: "self",
         energy: {
-            black: 1,
+            black: 2,
         },
         // TODO: implement self targeting
     },

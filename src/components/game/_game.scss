@@ -10,8 +10,10 @@
 
     &__battle-container{
        display:flex;
-       
-        
+      
+       &__infoModal{
+           padding-left: 10px;
+       }
     }
 
    
